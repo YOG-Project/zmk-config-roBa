@@ -50,6 +50,16 @@
             bindings = <&kp MINUS>;
             key-positions = <19 18>;
         };
+
+        back_slash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <32 33>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <23 24>;
+        };
     };
 
     macros {
@@ -93,6 +103,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp F11  &kp F12  &trans  &trans  &kp F11
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                            &kp F12
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         NUM {
@@ -102,6 +114,8 @@
 &mt LEFT_SHIFT N0  &kp N1  &kp N2  &kp N3  &kp PERIOD    &kp EQUAL                    &kp APOS        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans             &trans  &trans  &trans  &trans        &trans                       &trans          &trans                                                                     &kp PIPE
             >;
+
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         ARROW {
