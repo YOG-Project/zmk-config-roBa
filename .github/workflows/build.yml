@@ -4,12 +4,13 @@ jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
     with:
-      config_path: config
       board: xiao_ble
       shield: |
         roBa_L
         roBa_R
         settings_reset
+      snippet: studio-rpc-usb-uart
+
 
 #on: [push, pull_request, workflow_dispatch]
 #
