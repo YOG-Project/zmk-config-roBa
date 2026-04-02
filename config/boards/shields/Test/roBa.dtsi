@@ -112,13 +112,4 @@
         triggers-per-rotation = <10>;
     };
 };
-/ {
-    chosen {
-        zephyr,entropy = &rng;
-    };
-};
 
-/* NRF52840のNFCピンをGPIOとして使う設定（CONFIG_NFCT_PINS_AS_GPIOSの代替） */
-&nfct {
-    status = "disabled";
-};
